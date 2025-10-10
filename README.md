@@ -10,7 +10,7 @@ I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were 
 </p>
 
 <p align="center">
-  <img src="Picture1.svg" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
+  <img src="Screenshot 2025-10-10 215832.png" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
 </p>
 
 > This repository collects the design notes, figures, and minimal code used to generate the analyses.
