@@ -32,6 +32,21 @@ I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were 
 - 6 designs showed clear association plateaus and measurable dissociation.  
 - Representative traces are in `./figs`. If available, a table of fitted **k_on**, **k_off**, **K_D** values can be added in `results/kinetics_summary.csv`.
 
+
+## Methods: template‑guided design from an EGFR:TGF‑α complex
+
+I started from the **EGFR–TGF‑α** co‑crystal structure (TGF‑α is a natural ligand of EGFR). I cropped the complex to the **binding region** (positions **30–100** in my design numbering) and identified **anchor residues** at the interface using a distance cutoff and hydrogen‑bond criteria. Those anchor residues were **fixed**, the remaining positions were **masked**, and designs were generated in two stages:
+
+1. **Backbone/shape generation** with **RFdiffusion** using the fixed‑residue constraints to preserve the native contact geometry at the interface.
+2. **Sequence design** with **ProteinMPNN**, seeded on the RFdiffusion backbones while keeping the fixed residues immutable.
+
+The final models were re‑scored with standard structure/interaction filters and down‑selected for wet‑lab testing (BLI).
+
+## Reference to the competition analysis
+
+> Cotet, T.-S.; Krawczuk, I.; Stocco, F.; Ferruz, N.; Gitter, A.; Kurumida, Y.; de Almeida Machado, L.; Paesani, F.; Calia, C. N.; Challacombe, C. A.; Haas, N.; Qamar, A.; Correia, B. E.; Pacesa, M.; Nickel, L.; Subr, K.; Castorina, L. V.; Campbell, M. J.; Ferragu, C.; Kidger, P.; Hallee, L.; Wood, C. W.; Stam, M. J.; Kluonis, T.; Ünal, S. M.; Belot, E.; Naka, A.; Adaptyv Competition Organizers. **Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition.** *bioRxiv* (2025). https://doi.org/10.1101/2025.04.17.648362
+
+
 ## Repository layout
 ```
 egf-binders-adaptyv-round2/
