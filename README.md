@@ -1,9 +1,13 @@
 # EGF Binders: Round 2 of Adaptyv Bio's Protein Design Competition
 
-**AmirMohammad (@a.m.m.h2003)**
+**AmirMohammad (@a.m.m.h2003@gmail.com)**
 
 Adaptyv Bio accepted submissions for Round 2 of their Protein Design Competition.  
 I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were selected after in‑silico filters and proceeded to **wet‑lab evaluation**.
+
+<p align="center">
+  <img src="Picture1.svg" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
+</p>
 
 <p align="center">
   <img src="Picture1.svg" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
