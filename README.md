@@ -25,9 +25,6 @@ I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were 
   <img src="Screenshot 2025-10-10 215832.png" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
 </p>
 
-> This repository collects the design notes, figures, and minimal code used to generate the analyses.
-> All sequences and data produced by me are included or linked; third‑party datasets are referenced where applicable.
-
 ## TL;DR
 - Target: EGF (ligand of EGFR).
 - Designs submitted: 20; chosen for wet‑lab: 6.
