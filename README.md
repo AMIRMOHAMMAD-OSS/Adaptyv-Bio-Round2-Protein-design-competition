@@ -42,12 +42,6 @@ I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were 
 5. **Down‑selection** – top 6 forwarded for wet‑lab.
 6. **Wet‑lab** – BLI runs at several concentrations; global fitting of association/dissociation to estimate k_on, k_off, and K_D.
 
-> Notes: exact tools and parameters are listed in the `analysis/` folder or inline in figures. Replace/expand the bullets with your true pipeline details.
-
-## Results (snapshot)
-- 6 designs showed clear association plateaus and measurable dissociation.  
-- Representative traces are in `./figs`. If available, a table of fitted **k_on**, **k_off**, **K_D** values can be added in `results/kinetics_summary.csv`.
-
 
 ## Methods: template‑guided design from an EGFR:TGF‑α complex
 
@@ -63,27 +57,4 @@ The final models were re‑scored with standard structure/interaction filters an
 > Cotet, T.-S.; Krawczuk, I.; Stocco, F.; Ferruz, N.; Gitter, A.; Kurumida, Y.; de Almeida Machado, L.; Paesani, F.; Calia, C. N.; Challacombe, C. A.; Haas, N.; Qamar, A.; Correia, B. E.; Pacesa, M.; Nickel, L.; Subr, K.; Castorina, L. V.; Campbell, M. J.; Ferragu, C.; Kidger, P.; Hallee, L.; Wood, C. W.; Stam, M. J.; Kluonis, T.; Ünal, S. M.; Belot, E.; Naka, A.; Adaptyv Competition Organizers. **Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition.** *bioRxiv* (2025). https://doi.org/10.1101/2025.04.17.648362
 
 
-## Repository layout
-```
-egf-binders-adaptyv-round2/
-├─ README.md
-├─ figs/
-│  └─ kinetics.png            # provided figure
-├─ sequences/                 # place FASTA files here (e.g., submitted_20.fasta, selected_6.fasta)
-├─ results/                   # e.g., kinetics_summary.csv, raw_export/
-├─ analysis/                  # scripts/notebooks used for plots and filtering
-├─ LICENSE
-└─ .gitignore
-```
-
-## Reproduce / reuse
-- Figures are pre‑rendered for quick viewing.
-- If you add code: include minimal instructions in `analysis/` (environment and a run command).
-
-## Acknowledgments
-Adaptyv Bio for organizing the competition. Thanks to the community for sharing methods and feedback.
-
----
-
-> **How to cite:** If you use any of these figures, please cite this repository (author: AmirMohammad) and the corresponding competition round.
 
