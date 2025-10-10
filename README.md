@@ -6,7 +6,7 @@ Adaptyv Bio accepted submissions for Round 2 of their Protein Design Competition
 I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were selected after in‑silico filters and proceeded to **wet‑lab evaluation**.
 
 <p align="center">
-  <img src="./figs/Picture1.svg" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
+  <img src="./figs/picture1.svg" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
 </p>
 
 > This repository collects the design notes, figures, and minimal code used to generate the analyses.
