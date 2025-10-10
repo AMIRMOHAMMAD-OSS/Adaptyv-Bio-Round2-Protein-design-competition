@@ -25,12 +25,6 @@ I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were 
   <img src="Screenshot 2025-10-10 215832.png" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
 </p>
 
-## TL;DR
-- Target: EGF (ligand of EGFR).
-- Designs submitted: 20; chosen for wet‑lab: 6.
-- Wet‑lab readout: BLI/kinetic curves (association–dissociation, shift in nm).  
-- Goal: Share a concise, reproducible snapshot of the pipeline and results.
-
 ## Methods (brief)
 1. **Target prep** – EGF structure and interface context with EGFR DIII for hotspot guidance.
 2. **Sequence generation** – multiple independent seeds; length and secondary‑structure constraints varied.
