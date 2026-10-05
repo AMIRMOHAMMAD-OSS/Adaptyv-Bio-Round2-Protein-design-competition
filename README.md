@@ -35,6 +35,46 @@ I started from the **EGFR–TGF‑α** co‑crystal structure (TGF‑α is a nat
 
 The final models were re‑scored with standard structure/interaction filters and down‑selected for wet‑lab testing (BLI).
 
+
+## Run on wsl(Ubuntu)
+
+Requires Ubuntu or WSL2, Conda, Git, curl, and a working NVIDIA GPU.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/AMIRMOHAMMAD-OSS/Adaptyv-Bio-Round2-Protein-design-competition.git
+cd Adaptyv-Bio-Round2-Protein-design-competition/pipeline
+```
+
+### 2. Install the dependencies
+
+```bash
+bash scripts/install.sh
+```
+
+### 3. Download the model weights
+
+```bash
+bash scripts/download_models.sh
+```
+
+### 4. Run the full pipeline
+
+```bash
+bash scripts/run.sh full
+```
+
+This requests 5 backbones and 4 sequences per backbone, then selects up to 6 passing candidates.
+
+Results are saved in:
+
+```text
+pipeline/runs/egfr_full_v1/06_results/
+```
+
+The settings are in `pipeline/configs/full.yaml`. Predictions require experimental validation.
+
 ## Reference to the competition analysis
 
 > Cotet, T.-S.; Krawczuk, I.; Stocco, F.; Ferruz, N.; Gitter, A.; Kurumida, Y.; de Almeida Machado, L.; Paesani, F.; Calia, C. N.; Challacombe, C. A.; Haas, N.; Qamar, A.; Correia, B. E.; Pacesa, M.; Nickel, L.; Subr, K.; Castorina, L. V.; Campbell, M. J.; Ferragu, C.; Kidger, P.; Hallee, L.; Wood, C. W.; Stam, M. J.; Kluonis, T.; Ünal, S. M.; Belot, E.; Naka, A.; Adaptyv Competition Organizers. **Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition.** *bioRxiv* (2025). https://doi.org/10.1101/2025.04.17.648362
