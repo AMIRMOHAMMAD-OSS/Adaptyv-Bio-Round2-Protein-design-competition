@@ -30,7 +30,7 @@ I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were 
 
 I started from the **EGFR–TGF‑α** co‑crystal structure (TGF‑α is a natural ligand of EGFR). I cropped the complex to the **binding region** (positions **30–100** in my design numbering) and identified **anchor residues** at the interface using a distance cutoff and hydrogen‑bond criteria. Those anchor residues were **fixed**, the remaining positions were **masked**, and designs were generated in two stages:
 
-1. **Backbone/shape generation** with **RFdiffusion** using the fixed‑residue constraints to preserve the native contact geometry at the interface.
+1. **Backbone generation** with **RFdiffusion** using the fixed‑residue constraints to preserve the native contact geometry at the interface.
 2. **Sequence design** with **ProteinMPNN**, seeded on the RFdiffusion backbones while keeping the fixed residues immutable.
 
 The final models were re‑scored with standard structure/interaction filters and down‑selected for wet‑lab testing (BLI).
@@ -39,7 +39,7 @@ The final models were re‑scored with standard structure/interaction filters an
 
 > Cotet, T.-S.; Krawczuk, I.; Stocco, F.; Ferruz, N.; Gitter, A.; Kurumida, Y.; de Almeida Machado, L.; Paesani, F.; Calia, C. N.; Challacombe, C. A.; Haas, N.; Qamar, A.; Correia, B. E.; Pacesa, M.; Nickel, L.; Subr, K.; Castorina, L. V.; Campbell, M. J.; Ferragu, C.; Kidger, P.; Hallee, L.; Wood, C. W.; Stam, M. J.; Kluonis, T.; Ünal, S. M.; Belot, E.; Naka, A.; Adaptyv Competition Organizers. **Crowdsourced Protein Design: Lessons From the Adaptyv EGFR Binder Competition.** *bioRxiv* (2025). https://doi.org/10.1101/2025.04.17.648362
 
-## Run on Ubuntu
+## Run on wsl (Ubuntu)
 
 Requires Ubuntu or WSL2, Conda, Git, curl, and a working NVIDIA GPU.
 
@@ -63,8 +63,6 @@ bash scripts/download_models.sh
 ```
 
 ### 4. Run the full pipeline
-
-After the smoke run finishes successfully:
 
 ```bash
 bash scripts/run.sh full
