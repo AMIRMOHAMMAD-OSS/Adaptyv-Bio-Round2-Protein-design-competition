@@ -15,7 +15,7 @@
 </p>
 
 Adaptyv Bio accepted submissions for Round 2 of their Protein Design Competition.  
-I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were selected after in‑silico filters and proceeded to **wet‑lab evaluation**.
+I designed *20* binders targeting **Epidermal Growth Factor Receptor (EGFR)**; **6** were selected after in‑silico filters and proceeded to **wet‑lab evaluation**.
 
 <p align="center">
   <img src="Picture1.svg" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
@@ -24,14 +24,6 @@ I designed *20* binders targeting **Epidermal Growth Factor (EGF)**; **6** were 
 <p align="center">
   <img src="Screenshot 2025-10-10 215832.png" alt="Kinetic curves (BLI) for representative designs" width="720px"/>
 </p>
-
-## Methods (brief)
-1. **Target prep** – EGF structure and interface context with EGFR DIII for hotspot guidance.
-2. **Sequence generation** – multiple independent seeds; length and secondary‑structure constraints varied.
-3. **In‑silico filters** – structural confidence and interface quality; basic developability screens (e.g., charge, hydrophobics, motifs).
-4. **Complex modeling** – binder:EGF models; interface sanity checks and contact maps.
-5. **Down‑selection** – top 6 forwarded for wet‑lab.
-6. **Wet‑lab** – BLI runs at several concentrations; global fitting of association/dissociation to estimate k_on, k_off, and K_D.
 
 
 ## Methods: template‑guided design from an EGFR:TGF‑α complex
