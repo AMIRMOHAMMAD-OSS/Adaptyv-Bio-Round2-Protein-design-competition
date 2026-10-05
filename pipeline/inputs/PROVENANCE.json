@@ -1,0 +1,10 @@
+{
+  "file": "1MOX.pdb",
+  "source": "https://files.rcsb.org/download/1MOX.pdb",
+  "entry": "https://www.rcsb.org/structure/1MOX",
+  "retrieved_utc_date": "2026-10-04",
+  "sha256": "afb29731066559e9d4c437875b58a87be3a297d19623641474276cbe42102a46",
+  "usage": "Worked example only; not established as the original author's source structure",
+  "target": "EGFR chain B residues 310-501",
+  "motif_donor": "TGF-alpha chain D residues 3-50"
+}

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egfr-binderflow"
+version = "1.0.0"
+description = "Auditable RFdiffusion → ProteinMPNN → ColabFold binder design and BLI analysis"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10,<2", "PyYAML>=6,<7", "matplotlib>=3.7,<4"]
+
+[project.scripts]
+binderflow = "binderflow.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["binderflow*"]

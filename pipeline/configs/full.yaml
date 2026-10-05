@@ -1,0 +1,98 @@
+schema_version: 1
+run:
+  output: ../runs/egfr_full_v1
+  synthetic_demo: false
+structure:
+  pdb: ../inputs/1MOX.pdb
+  target_name: EGFR
+  target_chain: B
+  target_ranges:
+  - - 310
+    - 501
+  donor_chain: D
+  donor_ranges:
+  - - 3
+    - 50
+  hotspot_residues: []
+anchors:
+  source_residues: []
+  contact_cutoff_A: 4.5
+  polar_cutoff_A: 3.5
+  require_polar_contact: false
+  max_anchors: 6
+design:
+  mode: motif
+  num_backbones: 5
+  seed: 1701
+  diffusion_steps: 50
+  length:
+  - 20
+  - 110
+  n_flank:
+  - 12
+  - 20
+  c_flank:
+  - 12
+  - 20
+  loop_length_delta: 1
+  fixed_geometry_tolerance_A: 0.75
+mpnn:
+  sequences_per_backbone: 4
+  temperature: 0.1
+  model_name: v_48_020
+  omit_amino_acids: X
+prediction:
+  msa_mode: single_sequence
+  num_models: 3
+  num_seeds: 1
+  num_recycles: 6
+filters:
+  contact_cutoff_A: 5.0
+  clash_cutoff_A: 2.0
+  min_binder_plddt: 80
+  min_iptm: 0.65
+  max_contact_pae_A: 10
+  max_pose_rmsd_A: 3.0
+  max_fold_rmsd_A: 2.0
+  max_motif_rmsd_A: 1.5
+  min_contact_residue_pairs: 8
+  max_interchain_clash_pairs: 0
+  max_context_clash_pairs: 0
+  max_observed_glycan_clash_pairs: 0
+  max_hydrophobic_fraction: 0.5
+  max_hydrophobic_run: 5
+  max_glycosylation_sequons: 0
+  max_abs_charge: 10
+selection:
+  top_k: 6
+  max_identity: 0.8
+provenance_files:
+- ${BINDER_TOOLS_RECORD}
+tools:
+  rfdiffusion:
+    command:
+    - conda
+    - run
+    - --no-capture-output
+    - -n
+    - binder-rfd-wsl
+    - python
+    - ${RFD_ROOT}/scripts/run_inference.py
+    cwd: ${RFD_ROOT}
+  proteinmpnn:
+    command:
+    - conda
+    - run
+    - --no-capture-output
+    - -n
+    - binder-mpnn-wsl
+    - python
+    - ${MPNN_ROOT}/protein_mpnn_run.py
+    cwd: ${MPNN_ROOT}
+  colabfold:
+    command:
+    - ${COLABFOLD_BATCH}
+    - --max-msa
+    - 32:64
+    - --data
+    - ${COLABFOLD_PARAMS}
